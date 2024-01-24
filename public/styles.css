@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  background-color: darkgray;
+}
+
+div {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+a {
+  margin-inline: 1rem;
+}
