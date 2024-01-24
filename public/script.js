@@ -20,20 +20,18 @@ async function getOwnerNames() {
   console.log(json);
 
   const petOwners = json.map((pet) => {
-    const li = document.createElement("li");
-    li.innerHTML = pet.owner;
-    return li;
+    const option = document.createElement("option");
+    option.innerHTML = pet.owner;
+    ownerInput.appendChild(option);
   });
-  const ownerList = document.getElementById("ownerNames");
-  ownerList.append(...petOwners);
+
+  // ownerInput.innerHTML = petOwners;
 
   const petNames = json.map((pet) => {
-    const li = document.createElement("li");
-    li.innerHTML = pet.name;
-    return li;
+    const option = document.createElement("option");
+    option.innerHTML = pet.name;
+    petInput.appendChild(option);
   });
-  const petList = document.getElementById("petNames");
-  petList.append(...petNames);
 }
 
 getOwnerNames();

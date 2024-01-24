@@ -15,22 +15,14 @@
       <a href="/api">Hello World</a>
       <a href="/api/v1/pets">All Pets</a>
       <div>
-        <label for="ownerInput">Enter an owner name and click the link</label
-        ><input type="text" id="ownerInput" /><a
-          href="/api/v1/pets/owner?owner="
-          id="owner"
-          >Owner</a
-        >
-        <h3>List of all owner names</h3>
-        <ul id="ownerNames"></ul>
+        <label for="ownerInput">Select an owner name and click the link</label
+        ><select id="ownerInput"></select
+        ><a href="/api/v1/pets/owner?owner=" id="owner">Owner</a>
       </div>
       <div>
-        <label for="petInput">Enter a pet name and click the link</label
-        ><input type="text" id="petInput" /><a href="/api/v1/pets/" id="pet"
-          >Pet</a
-        >
-        <h3>List of all pet names</h3>
-        <ul id="petNames"></ul>
+        <label for="petInput">Select a pet name and click the link</label
+        ><select id="petInput"></select
+        ><a href="/api/v1/pets/" id="pet">Pet</a>
       </div>
     </nav>
     <script src="script.js"></script>
